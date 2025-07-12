@@ -13,7 +13,7 @@ author AS (
 )
 
 SELECT 
-    a."authorMeta.name" AS Author,
+    DISTINCT a."authorMeta.name" AS Author,
     a."authorMeta.nickName" AS Nickname,
     a."authorMeta.fans" AS Followers,
     a."authorMeta.video" AS VideosCount,
